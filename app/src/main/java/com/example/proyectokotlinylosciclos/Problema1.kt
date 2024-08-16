@@ -9,8 +9,22 @@ fun main() {
     problema1()
 }
 
-// Función que debe desarrollar la lógica para la solución del problema
+// Función que desarrolla la lógica para la solución del problema
 fun problema1() {
-    // Desarrolle aquí la lógica
+    var contador = 1
+    var result = 0
+    println("Ingresa N:")
+    val num = readlnOrNull()?.toInt()
 
+    if (num != null) {
+        while (result <= num) {
+            result = contador * contador
+            if (result <= num) {
+                println(result)
+            }
+            contador++
+        }
+    } else {
+        println("Entrada no válida.")
+    }
 }

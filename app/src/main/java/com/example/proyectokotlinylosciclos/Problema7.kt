@@ -13,4 +13,22 @@ fun main() {
 fun problema7() {
     // Desarrolle aquí la lógica
 
+    var suma = 0.0
+    var cont = 0
+    println("N:")
+    val n = readlnOrNull()?.toIntOrNull() ?: 0
+
+    if (n > 0) {
+        for (i in cont..n) {
+
+            val temp = Math.pow(i.toDouble(), 3.0)
+            suma += temp
+            cont++
+
+        }
+        println("s = ${suma.toInt()}")
+    } else {
+        println("Error")
+    }
+
 }

@@ -13,4 +13,14 @@ fun main() {
 fun problema3() {
     // Desarrolle aquí la lógica
 
+    var  sum= 0
+
+    do {
+        println("n:")
+        val numero = readlnOrNull()?.toIntOrNull() ?: 0
+            sum += numero
+
+    } while (numero != 0)
+
+    println("Suma = $sum")
 }
