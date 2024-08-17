@@ -12,10 +12,15 @@ fun main() {
 // Función que debe desarrollar la lógica para la solución del problema
 fun problema8() {
     // Desarrolle aquí la lógica
-    println("A:")
-    var a = readlnOrNull()?.toIntOrNull() ?: 0
-    for (i in a..b) {
-        print("$a ")
-        a += 1
-    }
-}
+    var cont=1
+    println("n:")
+    val n = readlnOrNull()?.toIntOrNull() ?: 0
+    var factorial = 1
+
+
+        for (i in cont..n) {
+            factorial *= cont
+            cont++
+        }
+
+        println("$n ! = $factorial")}

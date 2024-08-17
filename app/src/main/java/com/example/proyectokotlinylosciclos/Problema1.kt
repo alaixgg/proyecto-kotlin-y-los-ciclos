@@ -20,11 +20,9 @@ fun problema1() {
         while (result <= num) {
             result = contador * contador
             if (result <= num) {
-                println(result)
+                print("$result ")
             }
             contador++
         }
-    } else {
-        println("Entrada no válida.")
     }
 }
